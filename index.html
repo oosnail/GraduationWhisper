@@ -2,19 +2,14 @@
 <html>
 
 
-<body background="img/background.jpg">
+<body background="img/background.jpg" font-family: "Microsoft YaHei" ! important;>
 
 <script type="text/javascript" src="./dist/nebulas.js"></script>
 <script type="text/javascript" src="./dist/nebPay.js"></script>
 <script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
 <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
-<div class="topnav">
-    <a class="active" href="index.html">Home</a>
-    <a href="post.html">发布</a>
-    <a href="#contact">联系我们</a>
-    <a href="https://nebulas.io/cn/index.html">星云链</a>
-</div>
+
 
 
 <head>
@@ -22,62 +17,37 @@
     <meta charset="UTF-8">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
-    <style>
-        .topnav a {
-            background-color: black;
-            float: right;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .topnav a.active {
-            background-color: #4CAF50;
-            color: white;
-        }
-        .container{
-            min-width:200px;
-            max-width:500px;
-        }
-    </style>
 </head>
 
 
-<div class="container" background="black">
-    <div class="row clearfix" background="black">
-        <div class="col-md-12 column" background="black">
-            <div style="text-align: center">
-                <h1>毕业悄悄话</h1>
-            </div>
-
-            <div class="input-group" style="margin-left:20px;margin-top: 20px">
-                <span class="input-group-addon">学校</span>
-                <input type="text" class="form-control" placeholder="输入学校名称" id=search_school>
-            </div>
-
-            <div class="input-group" style="margin-left:20px;margin-top: 20px">
-                <span class="input-group-addon">专业</span>
-                <input type="text" class="form-control" placeholder="输入专业名" id=search_major>
-            </div>
-
-            <div class="input-group" style="margin-left:20px;margin-top: 20px">
-                <span class="input-group-addon">姓名</span>
-                <input type="text" class="form-control" placeholder="输入姓名" id=search_name>
-            </div>
-
-            <div style="margin-top:20px;text-align: center">
-                <button class="btn btn-info" id=search ;style="width=100px">查询</button>
-            </div>
 
 
-        </div>
+
+<div class="topnav">
+    <a href="index.html">首页</a>
+    <a class="active" href="get.html">查询</a>
+    <a href="post.html">发布</a>
+    <a id="contact">联系我们</a>
+    <a href="https://nebulas.io/cn/index.html">星云链</a>
+</div>
+
+<div class="scroll_screen">
+    <div>
+        <ul>
+            <li>聚是一把火，散是满天星  --四川大学 张翼飞</li>
+            <li>也许你不情愿，也许你胆怯，但只要能够跨出去，一种温馨而充满活力的生活也许就在你的面前 --上海大学 易家扬</li>
+            <li>也许你不情愿，也许你胆怯，但只要能够跨出去，一种温馨而充满活力的生活也许就在你的面前 --上海大学 易家扬</li>
+            <li>让我们用共同的信念铸造的航船，到生活的大海去犁出雪白的浪花 --厦门大学 刘佳倩</li>
+            <li>明晨行别，但愿云彩、艳阳一直陪伴你走到海角天涯;鲜花、绿草相随你铺展远大的前程。 --安徽理工 毛家桥</li>
+            <li>我们匆匆告别，走向各自的远方，没有言语，更没有眼泪，只有永恒的思念和祝福，在彼此的心中发出深沉的共鸣 --芜湖理工 王立群</li>
+        </ul>
     </div>
+</div>
+
+<div class="container">
+
+
+
     <style>
         .btn-info {
             width: 200px;
@@ -90,6 +60,60 @@
     </style>
 
 </body>
+
+<style>
+        .topnav a {
+            background-color: #f2f2f2;
+            float: right;
+            color: #348ad1;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover {
+            background-color: #348ad1;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #348ad1;
+            color: white;
+        }
+        .container{
+            min-width:200px;
+            max-width:500px;
+        }
+        .scroll_screen {
+            width: 1200px;
+            height: 100px;
+            top: 500px;
+            font-size: 18px;
+            background: rgba(0,0,0,0);
+            opacity: 1;
+            /*border: 1px solid #fff;*/
+            box-sizing: border-box;
+            /*padding-left: 19px;*/
+            padding-top: 68px;
+            position: absolute;
+            top: 30%;
+            transform: translateY(-50%);
+        }
+
+        .scroll_screen div {
+            top: 500px;
+            height: 34px;
+            overflow: hidden;
+        }
+
+        .scroll_screen ul li {
+            top: 500px;
+            padding-left: 30px;
+            line-height: 34px;
+            background-repeat: repeat;
+            color:white;
+        }
+</style>
 
 <script>
     "use strict";
@@ -137,8 +161,7 @@
                 return;
             } else {
                 result = JSON.parse(result);
-                alert("正文:  " + result.content)
-
+                confirm("正文:  " + result.content)
             }
         }).catch(function (err) {
             console.log("error :" + err.message);
@@ -149,6 +172,7 @@
 
 
     $('#post').click(function () {
+
         if (!$("#post_school").val()) {
             alert('学校不能为空');
             return;
@@ -180,6 +204,30 @@
 
     })
 
+    $('#contact').click(function (){
+        var content = "如果有任何建议或者有其他需求可以用一下方式联系我们: <br> email:oosnail@foxmail.com <br>QQ:85338033"
+        document.getElementById('modal-header-id').innerHTML = "联系我们";
+        document.getElementById('modal-body-id').innerHTML = content;
+        modal.style.display = "block";
+    })
+
+
+    function autoScroll(obj) {
+        $(".scroll_screen ul").animate({
+            marginTop: "-34px"
+        }, 500, function () {
+            $(this).css({ marginTop: "0px" }).find("li:first").appendTo(this);
+        })
+    }
+    $(function () {
+        if ($(".scroll_screen ul li").length > 2) {
+            setInterval('autoScroll(".scroll_screen")', 2000);
+        }
+    })
+
 </script>
+
+
+
 
 </html>
