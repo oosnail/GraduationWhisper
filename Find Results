@@ -1,0 +1,29 @@
+Searching 26 files for "Testnet"
+
+/Users/ztcq/Desktop/GraduationWhisper/get.html:
+  243:     neb.setRequest(new nebulas.HttpRequest("https://Testnet.nebulas.io"))
+
+/Users/ztcq/Desktop/GraduationWhisper/index.html:
+  231:     neb.setRequest(new nebulas.HttpRequest("https://Testnet.nebulas.io"))
+
+/Users/ztcq/Desktop/GraduationWhisper/post.html:
+  244:     neb.setRequest(new nebulas.HttpRequest("https://Testnet.nebulas.io"))
+
+/Users/ztcq/Desktop/GraduationWhisper/readme.md:
+   48: 接下来进行下一步准备，那就是领取测试网的测试币。在[https://testnet.nebulas.io/claim/](https://testnet.nebulas.io/claim/)每天可以领取1NAS的测试币，注意这个币领取是在测试网，与主网没有任何关系。 主网和测试网的意思你可以理解为两个不同的链，事实上区块链本身就是数据库，其实就是主网和测试网是两个不同的数据库的数据，测试网的数据只用来测试不产生实际价值。
+
+5 matches across 4 files
+
+
+Searching 26 files for "n1rN4qxhtzKwgMELbDp4c3mfgYmksHNE4en"
+
+/Users/ztcq/Desktop/GraduationWhisper/get.html:
+  241:     var dappContactAddress = "n1rN4qxhtzKwgMELbDp4c3mfgYmksHNE4en";
+
+/Users/ztcq/Desktop/GraduationWhisper/index.html:
+  229:     var dappContactAddress = "n1rN4qxhtzKwgMELbDp4c3mfgYmksHNE4en";
+
+/Users/ztcq/Desktop/GraduationWhisper/post.html:
+  242:     var dappContactAddress = "n1rN4qxhtzKwgMELbDp4c3mfgYmksHNE4en";
+
+3 matches across 3 files
